@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_notice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.atul.notice.WriteNotice">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/notice_head"
+        android:background="@drawable/bg_edittext"
+        android:hint="Enter Heading of Notice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:id="@+id/notice_text"
+        android:hint="Enter Notice here"
+        android:height="240dp"
+        android:layout_below="@+id/notice_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="Teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_checkBox"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_below="@+id/notice_text"
+        android:layout_toRightOf="@+id/student_checkBox"
+        android:layout_toEndOf="@+id/student_checkBox"
+        android:layout_marginTop="12dp" />
+
+    <CheckBox
+        android:text="Student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_checkBox"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignBaseline="@+id/teacher_checkBox"
+        android:layout_alignBottom="@+id/teacher_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_button"
+        android:background="#ba1316"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_below="@+id/teacher_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

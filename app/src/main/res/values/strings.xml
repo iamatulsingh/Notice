@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notice</string>
+    <string name="country_prompt">Choose Role</string>
+
+    <string-array name="country_arrays">
+        <item>Admin</item>
+        <item>Teacher</item>
+        <item>Director</item>
+    </string-array>
+
+</resources>

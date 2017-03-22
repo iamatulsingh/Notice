@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:id="@+id/custom_bar"
+    android:layout_height="60dp"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/notice_logo"
+            android:id="@+id/admin_imageView"
+            android:layout_width="100dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logout_white"
+            android:id="@+id/logout_imageView"
+            android:layout_gravity="right|end"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/wrire_logo"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/logout_imageView"
+            android:layout_toStartOf="@+id/logout_imageView"
+            android:id="@+id/write_imageview" />
+
+    </RelativeLayout>
+
+</LinearLayout>
