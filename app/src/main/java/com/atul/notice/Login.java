@@ -38,6 +38,7 @@ public class Login extends AppCompatActivity {
     TextView _forgotLink;
     NotificationManager notificationManager;
     String username,password,role,role_local = "";
+    String ab;
     ProgressDialog progressDialog = null;
     Spinner login_spinner;
     SessionManager session;
